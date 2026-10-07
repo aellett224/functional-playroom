@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Free Consultation | The Functional Playroom</title>
+  <meta name="description" content="Book a free, no-pressure playroom consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23e6eee3'/%3E%3Crect x='8' y='15' width='7' height='7' rx='1.5' fill='%238fa98b'/%3E%3Crect x='17' y='15' width='7' height='7' rx='1.5' fill='%23c98f74'/%3E%3Crect x='12.5' y='8' width='7' height='7' rx='1.5' fill='%23f2dfd5'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="12" width="8" height="8" rx="1.5" fill="#8fa98b"/><rect x="13" y="12" width="8" height="8" rx="1.5" fill="#c98f74"/><rect x="8" y="3" width="8" height="8" rx="1.5" fill="#f2dfd5" stroke="#c98f74" stroke-width="1"/></svg>
+        </span>
+        The Functional Playroom
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="nav-cta" href="contact.html" aria-current="page">Free consultation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Free consultation</span>
+        <h1>Let's talk about your playroom</h1>
+        <p class="lead">Fill in the form and I'll get back to you within [2 business days] to set up a time for your free, no-pressure consultation.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+
+        <div class="form-card">
+          <!--
+            CONTACT FORM
+            This form sends messages through Formspree (free).
+            Replace YOUR_FORM_ID below with the code Formspree gives you.
+            Step-by-step instructions are in README.md.
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New consultation request from your website">
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="location">Town or neighbourhood</label>
+                <input type="text" id="location" name="location" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="children">Children's ages <span class="optional">(optional)</span></label>
+              <input type="text" id="children" name="children_ages" placeholder="e.g. 2 and 5">
+            </div>
+
+            <div class="field">
+              <label for="service">What are you interested in?</label>
+              <select id="service" name="service">
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Full Playroom Setup">Full Playroom Setup</option>
+                <option value="Play Corner Refresh">Play Corner Refresh</option>
+                <option value="Virtual Playroom Plan">Virtual Playroom Plan</option>
+                <option value="Seasonal Refresh">Seasonal Refresh</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Tell me a little about your space</label>
+              <textarea id="message" name="message" placeholder="What's working, what's not, and anything else you'd like me to know."></textarea>
+            </div>
+
+            <fieldset class="field">
+              <legend>Best way to reach you</legend>
+              <div class="inline-choices">
+                <label class="choice"><input type="radio" name="contact_preference" value="Email" checked> Email</label>
+                <label class="choice"><input type="radio" name="contact_preference" value="Phone call"> Phone call</label>
+                <label class="choice"><input type="radio" name="contact_preference" value="Text message"> Text message</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="choice">
+                <input type="checkbox" name="privacy_consent" value="Yes" required>
+                <span>I agree that The Functional Playroom may use these details to reply to my request, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+              </label>
+            </div>
+
+            <!-- Spam trap: real visitors never see or fill this in -->
+            <div class="hidden-field" aria-hidden="true">
+              <label for="_gotcha">Leave this empty</label>
+              <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="btn" type="submit">Request my free consultation</button>
+            <p class="form-note">Please don't include sensitive information about your children, such as health details. A first name and age are plenty.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <div class="card">
+            <h3>What to expect</h3>
+            <ul class="check-list mb-0">
+              <li>A reply within [2 business days]</li>
+              <li>A 20–30 minute chat by phone or video</li>
+              <li>First ideas for your space</li>
+              <li>No cost and no obligation</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Prefer email?</h3>
+            <p class="mb-0">Write to me at <a href="mailto:hello@example.com">hello@example.com</a>.<br>In-home services in [Your City] and nearby. Virtual plans available anywhere.</p>
+          </div>
+          <!-- PHOTO: optional small photo, e.g. a labelled toy shelf -->
+          <div class="photo-placeholder short" role="img" aria-label="Photo coming soon">
+            Your photo here (optional):<br>a labelled toy shelf
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>The Functional Playroom</h3>
+          <p>Calm, simple playrooms where young children can find, use, and put away their toys on their own.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li>Serving [Your City] and nearby</li>
+            <li><a href="contact.html">Book a free consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 The Functional Playroom &middot; <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
