@@ -12,7 +12,8 @@ A simple website with five pages, made only from plain HTML and CSS files, so it
 | `contact.html` | **Contact** page with the consultation request form |
 | `privacy.html` | **Privacy Policy** (a template to fill in) |
 | `css/styles.css` | The "look" of the site: colours, fonts, spacing, phone layout |
-| `images/` | An empty folder for your photos |
+| `images/` | A folder for your photos |
+| `images/brand/` | Your logo files (`logo-mark.svg` is the sharp version used on the site) |
 
 An `.html` file holds the words on a page. The `.css` file controls how every page looks.
 
