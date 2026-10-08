@@ -745,3 +745,32 @@ fieldset.field {
 
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- Service details (added) ---------- */
+
+.service h3 {
+  font-size: 1.1rem;
+  margin-top: 1.4em;
+}
+
+.service .lead {
+  font-size: 1.1rem;
+}
+
+.product-note {
+  background: var(--sand);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 0 0 1.4em;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
+.product-note ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.product-note li { margin-bottom: 0.5em; }
+.product-note li:last-child { margin-bottom: 0; }
+.fine-print { margin-bottom: 0.8em; }
