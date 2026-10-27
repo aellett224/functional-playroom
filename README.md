@@ -73,24 +73,20 @@ Every pink striped box that says "Your photo here" is a placeholder.
 
 **Photo tips:** Landscape photos work best. Resize them to about 1600 pixels wide before adding them so the site loads quickly. [Squoosh.app](https://squoosh.app) is a free tool for this. Only use photos of clients' homes with their permission.
 
-## 4. Connect the contact form (Formspree, free)
+## 4. The contact form (Formspree, connected)
 
-The form uses **[Formspree](https://formspree.io)**. Its free plan forwards up to 50 messages a month to your email, with no coding.
+The consultation form on `contact.html` is connected to **[Formspree](https://formspree.io)** (form ID `mljjbvll`). Its free plan forwards up to 50 messages a month to your email, with no coding.
 
-1. Sign up at formspree.io and click **+ New Form**. Name it "Consultation requests" and choose which email should receive messages.
-2. Formspree shows you a form address like `https://formspree.io/f/abcdwxyz`. The last part (`abcdwxyz`) is your form ID.
-3. In `contact.html`, find this line:
+- When a parent submits the form, Formspree emails you their answers and shows them a short "Thanks" page.
+- Every submission is also saved in your Formspree account, in case an email is missed.
+- A hidden spam trap is built into the form.
+- **First test:** once the site is online, send yourself a test message. Formspree asks you to confirm your email the first time.
 
-   ```html
-   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
+If you ever make a new Formspree form, change the code at the end of this line in `contact.html`:
 
-   Replace `YOUR_FORM_ID` with your ID and save.
-4. Once the site is online, send yourself a test message. Formspree asks you to confirm your email the first time.
-
-After someone submits the form, Formspree shows them a short "Thanks" page. A hidden spam trap is already built into the form.
-
-**Alternative:** If you host with Netlify (see below), you can use **Netlify Forms** (free, 100 messages a month) instead. Ask for help switching if you'd prefer that.
+```html
+<form action="https://formspree.io/f/mljjbvll" method="POST">
+```
 
 ## 5. Put the site online for free
 
